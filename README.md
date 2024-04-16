@@ -1,7 +1,9 @@
 # binaryCalculator
 I created this binary calculator to help me with my discrete math subject, it came in really helpful when studying for my exam!
 
-# Project deployed LIVE: https://661e61bc7be37318a9e08479--glistening-fudge-fe6fe2.netlify.app/
+# Project deployed LIVE: 
+
+### https://661e61bc7be37318a9e08479--glistening-fudge-fe6fe2.netlify.app/
 
 ## To run this project locally:
 ```
