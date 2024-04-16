@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-
+from flask_frozen import Freezer
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -44,6 +44,9 @@ def binary_to_text(binary, encoding='utf-8', errors='surrogatepass'):
     except Exception as e:
         return f"Error: {str(e)}"
 
-
-if __name__ == "__main__":
-    app.run()
+freezer = Freezer(app)
+# if __name__ == "__main__":
+#     app.run()
+if __name__ == '__main__':
+    # Generate the static files using Frozen-Flask
+    freezer.freeze()
